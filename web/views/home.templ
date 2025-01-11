@@ -1,0 +1,11 @@
+package views
+
+templ Home(title string, authList map[string]string) {
+	@Layout(title) {
+		<h1>Home!</h1>
+	}
+
+    for k, name := range authList{
+        <li><a href={templ.URL("/auth/" +  k)}>{ name }</a></li>
+    }
+}

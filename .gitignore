@@ -1,0 +1,6 @@
+.env
+.DS_Store
+*.db
+dist
+web/views/*.go
+web/views/*.txt
